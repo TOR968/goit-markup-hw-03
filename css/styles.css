@@ -115,12 +115,12 @@ h1 {
 }
 /*  */
 main .button {
+  margin: 0px;
   padding: 10px 32px ;
   display: inline-block;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 16px;  
   line-height: 1.87;
-  align-items: center;
   letter-spacing: 0.06em;
 }
 
