@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* основний текст #757575 */
 /* другоряний колір #212121 */
 /* білий #FFFFFF */
@@ -35,12 +45,23 @@ a {
 }
 /*  */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  /* display: inline-block */
 }
 /*  */
 .current {
   color: var(--accent-color);
 }
+/*  */
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
 /*  */
 header {
   background-color: var(--primary-white-color);
@@ -73,30 +94,44 @@ nav .list :focus {
 }
 /*  */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-image: url(../images/header.jpg);
-  /* background-color: rgba(47, 48, 58, 0.8); */
-}
+  background-color: rgba(47, 48, 58, 0.8);
+ }
+.hero h1{ 
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 46px;
+  /* width: 646px; */
+   }
 h1 {
   color: var(--primary-white-color);
 }
 /*  */
 main .button {
+  padding: 10px 32px ;
+  display: inline-block;
   font-weight: bold;
-font-size: 16px;
-line-height: 1.87;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
 }
 
 .button {
+  display: inline-block;
+  padding: 10px 28px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 900;
@@ -106,9 +141,16 @@ letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-}
+  }
 /*  */
+.function {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .function a {
+  /* width: 278px;
+  height: 120px; */
+  margin-bottom: 30px;
   background-color: var(--second-background);
 }
 .function a:hover,
@@ -117,16 +159,23 @@ letter-spacing: 0.06em;
   border-radius: 4px;
 }
 .function h3 {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: bold;
   text-transform: uppercase;
 }
 .function p {
+  margin: 0;
   color: var(--primary-text-color);
   line-height: 1.71;
 }
 /*  */
+.propose{
+  padding-bottom: 94px;;
+}
 .propose h2 {
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
@@ -142,9 +191,16 @@ letter-spacing: 0.06em;
 }
 /*  */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--second-background);
 }
+/* .team li{
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;} */
 .team h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
@@ -152,6 +208,8 @@ letter-spacing: 0.06em;
   text-align: center;
 }
 .team h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -159,6 +217,8 @@ letter-spacing: 0.06em;
   text-align: center;
 }
 .team p {
+  margin-top: 0;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-size: 16px;
 line-height: 1.19;
@@ -170,17 +230,29 @@ text-align: center;
 }
 /*  */
 .company {
+  padding-top: 94px;
+  padding-bottom: 94px;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+.company h2{
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 .company a:hover,
 .company a:focus {
   background-color: var(--accent-color);
 }
 /*  */
+footer {
+  padding-top: 48px;
+  padding-bottom: 21px;
+  color: var(--primary-white-color);
+  background-color: var(--footer-background);
+}
 .title-footer{
   font-family: Raleway;
   font-weight: bold;
@@ -193,12 +265,9 @@ footer span {
 footer a {
   color: var(--primary-white-color);
 }
-footer {
-  color: var(--primary-white-color);
-  background-color: var(--footer-background);
-}
+
 address {
-    font-family: Roboto;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
