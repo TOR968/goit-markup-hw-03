@@ -63,10 +63,24 @@ a {
   padding-right: 15px;
   }
 /*  */
+.site-nav{
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px
+}
+/*  */
 header {
   background-color: var(--primary-white-color);
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+.adres-nav{
+  display: flex;
+  margin-left: auto;
+}
+.adres-nav .item + .item {
+  margin-left: 30px
 }
 .adres-nav a {
   color: var(--primary-text-color);
@@ -77,11 +91,18 @@ header {
 }
 /*  */
 .title-nav {
+  margin-right: 86px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
 }
+.main-nav{
+  display: flex;
+  align-items: center;
+}
 nav a {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 }
 nav span {
@@ -103,6 +124,7 @@ nav .list :focus {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
+  /* background-image: url(../images/header.jpg); */
  }
 .hero h1{ 
   display: inline-block;
@@ -125,6 +147,7 @@ main .button {
 }
 
 .button {
+  margin-left: 12px;
   display: inline-block;
   padding: 10px 28px;
   border: 1px solid transparent;
@@ -147,9 +170,17 @@ main .button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.function-main{
+  display: flex;
+  align-items: center;
+}
+.function-main .item + .item {
+  margin-left: 30px
+}
 .function a {
-  /* width: 278px;
-  height: 120px; */
+  display: inline-block;
+  width: 279px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--second-background);
 }
@@ -159,7 +190,7 @@ main .button {
   border-radius: 4px;
 }
 .function h3 {
-  margin-bottom: 10px;
+  margin:0 0 10px;
   color: var(--title-text-color);
   font-weight: bold;
   text-transform: uppercase;
@@ -170,8 +201,14 @@ main .button {
   line-height: 1.71;
 }
 /*  */
+.proposed{
+display: flex;
+}
+.proposed .item + .item{
+  padding-left: 30px;
+}
 .propose{
-  padding-bottom: 94px;;
+  padding-bottom: 94px;
 }
 .propose h2 {
   margin-top: 0px;
@@ -183,21 +220,37 @@ main .button {
   text-align: center;
 }
 .propose h3 {
+  margin: 0;
+  padding: 27px;
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 0px 0px 4px 4px;
 }
 /*  */
+.us{
+  display: flex;
+}
+.us .item + .item {
+  margin-left: 30px;
+}
+.us .item {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px; 
+}
+/* .item .john {
+  width: 278px;
+  height: 260px;
+  background-image: url(../images/john.jpg);
+  border-radius: 4px 4px 0px 0px;} */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--second-background);
 }
-/* .team li{
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;} */
 .team h2 {
   margin-top: 0;
   margin-bottom: 50px;
@@ -228,11 +281,31 @@ text-align: center;
 .team a:focus {
   background-color: var(--accent-color);
 }
+.social {
+  display: flex;
+  margin: 0 36px 24px 35px;
+  width: 207px;
+  height: 44px;
+  border: 1px solid green;
+}
 /*  */
+.client {
+  display: flex;
+  
+}
+.client .item{
+  width: 175px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client .item +.item{
+  margin-left: 30px;
+}
 .company {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* background-color: var(--background); */
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
@@ -248,21 +321,37 @@ text-align: center;
   background-color: var(--accent-color);
 }
 /*  */
+
 footer {
-  padding-top: 48px;
-  padding-bottom: 21px;
   color: var(--primary-white-color);
   background-color: var(--footer-background);
 }
+.logo-adress-main{
+  display: flex;
+}
+.logo-adress{
+  margin: 48px 179px 28px 0;
+}
+.connect{
+  margin: 56px 0 56px;
+}
 .title-footer{
+  display: inline-block;
+  margin-bottom: 10px;
   font-family: Raleway;
   font-weight: bold;
   font-size: 22px;
   line-height: 1.18;
 }
-footer span {
+.city, .mail{
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.web {
   color: var(--accent-color);
 }
+
 footer a {
   color: var(--primary-white-color);
 }
@@ -275,6 +364,20 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.join{
+  display: flex;
+}
+.join .item + .item{
+  margin-left: 10px;
+}
+.join .item{
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: rgba(255, 255, 255, 0.1);
+  border:2px solid green;
+}
 .join a:hover,
 .join a:focus {
   background-color: var(--accent-color);
@@ -283,14 +386,37 @@ address a {
   color: var(--adres-text-color);
  }
 footer b {
+  display: inline-block;
+  margin-bottom: 21px;
   font-weight: bold;
   text-transform: uppercase;
 }
-footer p {
+.subscribe {
+  margin-left: auto;
+  margin-top: 56px;
+  margin-bottom: 50px;
+}
+.input {
+  display: flex;
+  align-items: center;
+}
+input {
+  padding: 18px 58px 18px 12px;
+  width: 270px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+footer p { 
+  margin: 0;
+  padding: 18px 0px 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--adres-text-color);
   font-size: 12px;
-line-height: 2;
-text-align: center;
+  line-height: 2;
+  text-align: center;
 }
 
 /* css portfolio */
@@ -302,6 +428,9 @@ text-align: center;
   text-align: center;
 }
 .menu button {
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: var(--second-background);
   border-radius: 4px;
 }
@@ -316,6 +445,7 @@ text-align: center;
   background-color: var(--accent-color);
 }
 .project h3 {
+  margin:20px 24px 4px;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -323,6 +453,7 @@ text-align: center;
   letter-spacing: 0.06em;
 }
 .project p {
+  margin: 0px 24px 20px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
