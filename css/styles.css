@@ -232,6 +232,7 @@ text-align: center;
 .company {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* background-color: var(--background); */
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
