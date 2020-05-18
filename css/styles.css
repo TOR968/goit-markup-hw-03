@@ -172,7 +172,7 @@ h1 {
   letter-spacing: 0.06em;
   }
 .button img{
-  margin-left: 10px;
+  padding-left: 10px;
 }
 /*  */
 .function {
@@ -355,7 +355,7 @@ footer {
 }
 .title-footer{
   display: inline-block;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   font-family: Raleway;
   font-weight: bold;
   font-size: 22px;
@@ -363,7 +363,7 @@ footer {
 }
 .city, .mail{
   display: inline-block;
-  margin-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .web {
@@ -404,11 +404,12 @@ address a {
  }
 footer b {
   display: inline-block;
-  margin-bottom: 21px;
+  padding-bottom: 21px;
   font-weight: bold;
   text-transform: uppercase;
 }
 .subscribe {
+  align-items: center;
   margin-left: auto;
   margin-top: 56px;
   margin-bottom: 50px;
