@@ -57,7 +57,7 @@ a {
 .container{
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   }
@@ -193,7 +193,7 @@ h1 {
   width: 279px;
   height: 120px;
   margin-bottom: 30px;
-  /* background-color: var(--second-background); */
+  background-color: var(--second-background);
 }
 .function a:hover,
 .function a:focus {
@@ -303,6 +303,12 @@ text-align: center;
   justify-content: center;
   margin: 0 auto;
 }
+.social .item-link + .item-link {
+  padding-left: 10px;
+}
+.social .item-link {
+  margin-bottom: 24px;
+}
 /*  */
 .client {
   display: flex;
@@ -386,10 +392,10 @@ address {
 .join{
   display: flex;
 }
-.join .item + .item{
+.join .item-link + .item-link{
   margin-left: 10px;
 }
-.join .item{
+.join .item-link{
   left: 0%;
   right: 0%;
   top: 0%;
