@@ -23,7 +23,7 @@ html {
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
   --adres-text-color: rgba(255, 255, 255, 0.6);
-  --background: #e5e5e5;
+  --background: #ffffff;
   --second-background: #f5f4fa;
   --footer-background: #2f303a;
 }
@@ -32,7 +32,7 @@ html {
 
 body {
   color: var(--primary-text-color);
-  /* background-color: var(--background); */
+  background-color: var(--background);
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 14px;
