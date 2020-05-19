@@ -507,7 +507,8 @@ footer p {
   border-radius: 5px 5px 0px 0px;
 }
 .project h3 {
-  margin:20px 24px 4px;
+  margin: 0;
+  padding:20px 24px 4px;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -515,7 +516,8 @@ footer p {
   letter-spacing: 0.06em;
 }
 .project p {
-  margin: 0px 24px 20px;
+  margin: 0;
+  padding: 0px 24px 20px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
