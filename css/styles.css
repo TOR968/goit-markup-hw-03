@@ -176,15 +176,12 @@ h1 {
   padding-left: 10px;
 }
 /*  */
-.function-main {
-  /* background-color: var(--background); */
-  padding-top: 94px;
-  padding-bottom: 94px;
-  border-bottom: 1px solid #ECECEC;
-}
 .function{
   display: flex;
   align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border-bottom: 1px solid #ECECEC;
 }
 .function .item + .item {
   margin-left: 30px
