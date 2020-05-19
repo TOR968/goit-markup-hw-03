@@ -57,7 +57,7 @@ a {
 .container{
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   }
@@ -253,6 +253,8 @@ display: flex;
   margin-left: 30px;
 }
 .us .item {
+  width: 270px;
+  overflow: hidden;
   background-color: var(--primary-white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px; 
@@ -280,8 +282,9 @@ display: flex;
   text-align: center;
 }
 .team h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -289,8 +292,8 @@ display: flex;
   text-align: center;
 }
 .team p {
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin: 0;
+  padding-bottom: 16px;
   color: var(--primary-text-color);
   font-size: 16px;
 line-height: 1.19;
@@ -306,7 +309,7 @@ text-align: center;
   margin: 0 auto;
 }
 .social .item-link + .item-link {
-  padding-left: 10px;
+  margin-left: 10px;
 }
 .social .item-link {
   margin-bottom: 24px;
@@ -484,6 +487,8 @@ footer p {
 }
 .project .item{
   display: block;
+  width: 370px;
+  overflow: hidden;
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--primary-white-color);
