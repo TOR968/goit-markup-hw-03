@@ -311,8 +311,8 @@ text-align: center;
 .social .item-link + .item-link {
   margin-left: 10px;
 }
-.social .item-link {
-  margin-bottom: 24px;
+.us .social{
+  padding-bottom: 24px;
 }
 /*  */
 .client {
