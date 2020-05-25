@@ -498,6 +498,16 @@ footer p {
     0px 1px 1px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
 }
+.card-img {
+  width: 370px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-content {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 .project .item:nth-child(3n) {
   margin-right: 0;
 }
